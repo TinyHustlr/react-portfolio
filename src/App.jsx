@@ -5,34 +5,12 @@ import youtubeLogo from './assets/youtube_svgrepo.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={martechLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://youtube.com/@minimumviablepizza" target="_blank">
-          <img src={youtubeLogo} className="logo" alt="YouTube logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={developerLogo} className="logo" alt="React logo" />
-        </a>
-      </div>
-      <h1>David O'Reilly</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <section className='hero-container' >
+      <h1 className='hero-heading'>Braze expert</h1>
+      <h1 className='hero-body'>Creating complete customer experiences with Braze as the engine</h1>
+    </section>
   )
 }
 
