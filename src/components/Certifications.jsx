@@ -9,13 +9,17 @@ import AIRecord from '../assets/ai_guiness_ 1.png'
 function Certifications() {
     return (
     <div className='certifications-container'>
+        <div className='cert-image-section'>
         <img className='cert-image' src={brazeDeveloper} />
-        <img className='cert-image' src={brazeAI} />
         <img className='cert-image' src={brazePrac} />
+        <img className='cert-image' src={brazeAI} />
         <img className='cert-image' src={brazeEmail} />
+        </div>
+        <div className='cert-image-section'>
         <img className='cert-image' src={hackWinner} />
         <img className='cert-image' src={hackathon} />
         <img className='cert-image' src={AIRecord} />
+        </div>
     </div>
     )
 }

@@ -19,6 +19,7 @@
   text-align: left;
   padding-right: 2rem;
 }
+
 .hero-heading {
   background: linear-gradient(to right, #FFD319 0%, #FF901F 20%, #FF2975 50%, #F222FF 70%, #8C1EFF 100%);
   background-clip: text;
@@ -27,17 +28,18 @@
 
 .hero-image {
   padding: 2rem 0;
-  max-width: 600px;
-}
-
-.certifications-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
+  max-width: 350px;
 }
 
 .cert-image {
   width: 150px;
-  padding: 0.5rem;
+  padding: 1rem;
+}
+
+.cert-image-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
 }
