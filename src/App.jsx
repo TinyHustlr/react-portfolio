@@ -1,12 +1,13 @@
-import { useState } from 'react'
 import './App.css'
-import Hero from './components/Hero.jsx'
+import Certifications from './components/Certifications'
+import Hero from './components/Hero'
 
 function App() {
 
   return (
     <main>
       <Hero />
+      <Certifications />
     </main>
   )
 }
