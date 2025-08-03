@@ -16,7 +16,7 @@
 }
 
 .hero-heading {
-  background: linear-gradient(to right, #FFD319 0%, #FF901F 10%, #FF2975 34%, #F222FF 40%, #8C1EFF 440%);
+  background: linear-gradient(to right, #FFD319 0%, #FF901F 20%, #FF2975 50%, #F222FF 70%, #8C1EFF 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
