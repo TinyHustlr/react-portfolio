@@ -1,3 +1,4 @@
+import brazeArchitect from '../assets/braze-certified-technical-architect.png'
 import brazeDeveloper from '../assets/braze-certified-developer.png'
 import brazeAI from '../assets/braze-certification-brazeai-skills-badge.png'
 import brazePrac from '../assets/braze-certified-practitioner.png'
@@ -12,6 +13,7 @@ function Certifications() {
     return (
     <div className='certifications-container'>
         <div className='cert-image-section'>
+        <img className='cert-image' src={brazeArchitect} />
         <img className='cert-image' src={brazeDeveloper} />
         <img className='cert-image' src={brazePrac} />
         <img className='cert-image' src={brazeAI} />

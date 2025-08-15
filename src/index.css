@@ -31,4 +31,18 @@ h2 {
   margin: 0;
 }
 
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
 
+@media (max-width: 768px) {
+  h1, h2 {
+    font-size: 2.0rem;
+    text-align: center;
+    width: 80vw;
+  }
+
+
+}
