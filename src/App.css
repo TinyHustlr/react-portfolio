@@ -37,6 +37,12 @@
   max-width: 350px; /* cap it so it doesn’t blow up too large */
 }
 
+.cert-image-section {
+  grid-column: 1;
+  grid-row: auto;
+  justify-self: center;
+}
+
 .cert-image {
   width: 9.375rem;
   padding: 1rem;
@@ -61,5 +67,10 @@
     grid-column: 3 / 5;
     grid-row: 1;
   }
+
+  .cert-image-section {
+  grid-column: 1 / 5;
+  grid-row: auto;
+}
 
 }

@@ -1,6 +1,7 @@
 import brazeArchitect from '../assets/braze-certified-technical-architect.png'
 import brazeDeveloper from '../assets/braze-certified-developer.png'
 import brazeAI from '../assets/braze-certification-brazeai-skills-badge.png'
+// import brazeSDK from '../assets/braze-certification-brazeWebSDK-skills-badge.png'
 import brazePrac from '../assets/braze-certified-practitioner.png'
 import brazeEmail from '../assets/braze-certification-email-deliverability-skills-bad.png'
 import torchieAward from '../assets/braze-torchie-award.png'
