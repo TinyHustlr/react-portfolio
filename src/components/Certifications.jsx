@@ -1,8 +1,8 @@
 import brazeArchitect from '../assets/braze-certified-technical-architect.png'
 import brazeDeveloper from '../assets/braze-certified-developer.png'
-import brazeAI from '../assets/braze-certification-brazeai-skills-badge.png'
-// import brazeSDK from '../assets/braze-certification-brazeWebSDK-skills-badge.png'
 import brazePrac from '../assets/braze-certified-practitioner.png'
+import brazeAI from '../assets/braze-certification-brazeai-skills-badge.png'
+import brazeSDK from '../assets/braze-web-sdk-skills-badge.png'
 import brazeEmail from '../assets/braze-certification-email-deliverability-skills-bad.png'
 import torchieAward from '../assets/braze-torchie-award.png'
 import hackWinner from '../assets/microsoft-global-hackathon-2024-executive-challenge.png'
@@ -18,6 +18,7 @@ function Certifications() {
         <img className='cert-image' src={brazeDeveloper} />
         <img className='cert-image' src={brazePrac} />
         <img className='cert-image' src={brazeAI} />
+        <img className='cert-image' src={brazeSDK} />
         <img className='cert-image' src={brazeEmail} />
         </div>
         <div className='cert-image-section'>
