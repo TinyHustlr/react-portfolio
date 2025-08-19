@@ -1,6 +1,7 @@
 import './App.css'
 import Certifications from './components/Certifications'
 import Hero from './components/Hero'
+import ClaudeExample from './components/ClaudeExample'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <main>
       <Hero />
       <Certifications />
+      <ClaudeExample />
     </main>
   )
 }
