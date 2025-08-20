@@ -156,6 +156,8 @@
   color: #d1d5db;
   line-height: 1.75;
   font-family: monospace;
+  text-align: center;
+  font-weight: 700;
 }
 
 .text-pink {
@@ -223,7 +225,7 @@
   display: flex;
   gap: 3rem;
   white-space: nowrap;
-  animation: scroll 60s linear infinite;
+  animation: scroll 120s linear infinite;
 }
 
 .brand-name {

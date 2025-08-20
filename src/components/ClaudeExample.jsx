@@ -14,14 +14,16 @@ const RetroPortfolio = () => {
 
   // Sample brand names - replace with your actual clients
   const brands = [
-    'MICROSOFT', 'MYDNA', 'LIFE-SPACE PROBIOTICS', 'JAYCAR', 'MONASH UNIVERSITY'
+    'MICROSOFT', 'CLIPCHAMP', 'MYDNA', 'LIFE-SPACE PROBIOTICS', 'JAYCAR', 'MONASH UNIVERSITY'
   ];
 
   return (
     <div className="retro-portfolio">
       {/* Animated background grid */}
       <div className="bg-grid"></div>
-
+    <div className="description-text">
+      Trusted by:
+    </div>
     {/* Scrolling Brand Ticker */}
       <div className="brand-ticker">
         <div className="ticker-content">
