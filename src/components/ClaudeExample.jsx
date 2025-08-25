@@ -70,10 +70,10 @@ const RetroPortfolio = () => {
       <div className="youtube-section">
         <div className="youtube-container">
           <h3 className="section-title">
-            DIGITAL CONTENT
+            YOUTUBE
           </h3>
           <p className="section-subtitle">
-            Check out my latest gaming insights and creative process
+            Check out highlights from my channel
           </p>
           
           <div className="video-grid">
@@ -81,9 +81,7 @@ const RetroPortfolio = () => {
             <div className="video-card">
               <div className="video-placeholder">
                 <div className="video-content">
-                  <div className="video-icon">📺</div>
-                  <p className="video-title">EMBED YOUTUBE VIDEO #1</p>
-                  <p className="video-desc">Replace with actual YouTube embed</p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NOxASIHl1Us?si=b0o_82Q7as-zkJVY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
@@ -91,9 +89,7 @@ const RetroPortfolio = () => {
             <div className="video-card">
               <div className="video-placeholder">
                 <div className="video-content">
-                  <div className="video-icon">🎥</div>
-                  <p className="video-title">EMBED YOUTUBE VIDEO #2</p>
-                  <p className="video-desc">Replace with actual YouTube embed</p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/n9cpXlBmo_c?si=Yt4tXOtMmrDfW-mk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
