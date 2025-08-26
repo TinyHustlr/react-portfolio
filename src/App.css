@@ -50,7 +50,8 @@
 .cert-image-section {
   grid-column: 1;
   grid-row: auto;
-  justify-self: center;
+  display: block;
+  justify-items: center;
 }
 
 .cert-image {
@@ -58,6 +59,8 @@
   padding: 1rem;
   position: relative;
   z-index: 20;
+
+
 }
 
 .round-corners {
@@ -174,7 +177,9 @@
 .cta-buttons {
   display: flex;
   flex-direction: column;
+  grid-column: 1 / 2;
   gap: 1rem;
+  margin-bottom: 20px;
 }
 
 .btn-primary {
@@ -364,7 +369,10 @@
   }
   
   .cta-buttons {
-    flex-direction: row;
+    /* flex-direction: row; */
+    grid-column: 1 / 2;
+    justify-items: center;
+    
   }
   
   .video-grid {

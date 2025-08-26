@@ -2,7 +2,7 @@ import './App.css'
 import Certifications from './components/Certifications'
 import Hero from './components/Hero'
 import TrustedBy from './components/TrustedBy'
-import ClaudeExample from './components/ClaudeExample'
+import YouTube from './components/YouTube'
 
 function App() {
 
@@ -11,7 +11,7 @@ function App() {
       <Hero />
       <Certifications />
       <TrustedBy />
-      <ClaudeExample />
+      <YouTube />
     </main>
   )
 }
