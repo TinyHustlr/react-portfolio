@@ -1,6 +1,7 @@
 import './App.css'
 import Certifications from './components/Certifications'
 import Hero from './components/Hero'
+import TrustedBy from './components/TrustedBy'
 import ClaudeExample from './components/ClaudeExample'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <main>
       <Hero />
       <Certifications />
+      <TrustedBy />
       <ClaudeExample />
     </main>
   )
