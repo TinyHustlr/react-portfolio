@@ -10,15 +10,8 @@ import App from './App.jsx'
   allowUserSuppliedJavascript: false,
   },
   console.log("WEB SDK"),
-  setInterval(() => {
-  braze.changeUser('mvp-test')
-  console.log("CHANGE USER")
-  braze.openSession()
-  console.log("OPEN SESSION")
-  }, 5000)
 );
-
-
+  braze.openSession()
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
