@@ -10,8 +10,9 @@ import App from './App.jsx'
   allowUserSuppliedJavascript: false,
   },
   console.log("WEB SDK"),
-);
   braze.openSession()
+);
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
