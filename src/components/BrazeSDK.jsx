@@ -4,7 +4,7 @@ return (
 {/* // Initialize Braze SDK (loaded via CDN) */}
 braze.initialize('9d6d4815-121a-4429-96c1-37f70e975f01', {
     baseUrl: 'sdk.fra-02.braze.eu',
-    enableLogging: true,
+    enableLogging: false,
     allowUserSuppliedJavascript: false,
 });
 console.log("WEB SDK");
