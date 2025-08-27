@@ -12,12 +12,10 @@ import App from './App.jsx'
   console.log("WEB SDK"),
 );
 
-function session() {
+setInterval(() => {
   braze.openSession(),
   console.log("SESSION STARTED")
-};
-
-session();
+}, 5000);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
