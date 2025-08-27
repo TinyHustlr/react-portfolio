@@ -4,18 +4,18 @@ import './index.css'
 import App from './App.jsx'
 
 // Initialize Braze SDK (loaded via CDN)
-  braze.initialize('9d6d4815-121a-4429-96c1-37f70e975f01', {
+braze.initialize('9d6d4815-121a-4429-96c1-37f70e975f01', {
   baseUrl: 'sdk.fra-02.braze.eu',
   enableLogging: true,
   allowUserSuppliedJavascript: false,
-  },
-  console.log("WEB SDK"),
-);
+});
+console.log("WEB SDK");
 
-setInterval(() => {
-  braze.openSession(),
-  console.log("SESSION STARTED")
-}, 5000);
+// Open Braze session after a short delay to ensure initialization is complete
+setTimeout(() => {
+  braze.openSession();
+  console.log("SESSION STARTED");
+}, 1000);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
