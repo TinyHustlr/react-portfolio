@@ -10,10 +10,12 @@ import App from './App.jsx'
   allowUserSuppliedJavascript: false,
   },
   console.log("WEB SDK"),
-  braze.changeUser('mvp-test'),
-  console.log("CHANGE USER"),
-  braze.openSession(),
-  console.log("OPEN SESSION"),
+  setInterval(() => {
+  braze.changeUser('mvp-test')
+  console.log("CHANGE USER")
+  braze.openSession()
+  console.log("OPEN SESSION")
+  }, 5000)
 );
 
 
