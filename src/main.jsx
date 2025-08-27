@@ -13,6 +13,8 @@ console.log("WEB SDK");
 
 // Open Braze session after a short delay to ensure initialization is complete
 setTimeout(() => {
+  braze.changeUser("mvp-test");
+  console.log("CHANGE USER");
   braze.openSession();
   console.log("SESSION STARTED");
 }, 1000);
