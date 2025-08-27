@@ -8,7 +8,9 @@ import App from './App.jsx'
   baseUrl: 'sdk.fra-02.braze.eu',
   enableLogging: false,
   allowUserSuppliedJavascript: false,
-  });
+  },
+  console.log("WEB SDK")
+);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
