@@ -19,8 +19,7 @@
 .hero-text {
   text-align: left;
   padding-right: 2rem;
-  grid-row: 2;
-  grid-column: 1
+  grid-column: 1 / 5;
 }
 
 .hero-heading {
@@ -30,12 +29,16 @@
   line-height: 1.5;
   padding-bottom: 0.1em;
   overflow: visible;
+  grid-column: 1 / 5;
+  grid-row: 1;
+  text-align: center;
 }
+
 
 .hero-image-container {
   padding: 2rem 0;
-  grid-row: 1;
-  grid-column: 1; 
+  grid-row: 3;
+  grid-column: 1 / 5; 
   justify-self: center;
 }
 
