@@ -6,11 +6,17 @@ import App from './App.jsx'
 // Initialize Braze SDK (loaded via CDN)
   braze.initialize('9d6d4815-121a-4429-96c1-37f70e975f01', {
   baseUrl: 'sdk.fra-02.braze.eu',
-  enableLogging: false,
+  enableLogging: true,
   allowUserSuppliedJavascript: false,
   },
-  console.log("WEB SDK")
+  console.log("WEB SDK"),
+  braze.changeUser('mvp-test'),
+  console.log("CHANGE USER"),
+  braze.openSession(),
+  console.log("OPEN SESSION"),
 );
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
