@@ -10,7 +10,6 @@ function Hero() {
         <h2 className="hero-body">Let's make something remarkable together.</h2>
         
       </div>
-      <div className="title-divider"></div>
       <div className="hero-image-container">
         <img className="hero-image" src={profilepic} />
       </div>
