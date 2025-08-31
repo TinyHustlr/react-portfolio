@@ -1,4 +1,4 @@
-function YouTube() {
+export default function YouTube() {
   return (
     <>
       {/* YouTube Section */}
@@ -34,5 +34,3 @@ function YouTube() {
     </>
   );
 };
-
-export default YouTube;

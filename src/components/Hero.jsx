@@ -1,6 +1,6 @@
 import profilepic from "../assets/profile_pic.png";
 
-function Hero() {
+export default function Hero() {
   return (
     <div className="hero-container">
       <div className="hero-text">
@@ -20,5 +20,3 @@ function Hero() {
     </div>
   );
 }
-
-export default Hero;

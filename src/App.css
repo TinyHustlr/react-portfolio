@@ -7,8 +7,8 @@
   min-height: 100vh;
   background-color: black;
   background-image: 
-    linear-gradient(rgba(70, 130, 180, 0.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(70, 130, 180, 0.1) 1px, transparent 1px);
+    linear-gradient(rgba(70, 130, 180, 0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(70, 130, 180, 0.2) 1px, transparent 1px);
   background-size: 20px 20px;
   color: white;
   max-width: 100%;
@@ -148,6 +148,7 @@
   background: linear-gradient(to right, #FFD319 0%, #FF901F 20%, #FF2975 50%, #F222FF 70%, #8C1EFF 100%);
   padding: 1rem 0;
   overflow: hidden;
+  margin: 0 -1rem;
 }
 
 .ticker-content {
@@ -262,6 +263,7 @@
   padding: 2rem 1rem;
   border-top: 1px solid #06b6d4;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .footer-text {
