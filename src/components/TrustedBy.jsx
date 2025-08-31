@@ -9,8 +9,15 @@ function TrustedBy() {
       <div className="brand-ticker">
         <div className="ticker-content">
           <div className="ticker-scroll">
-            {[...brands, ...brands, ...brands, ...brands, ...brands].map((brand, index) => (
+            {brands.map((brand, index) => (
               <span key={index} className="brand-name">
+                {brand}
+              </span>
+            ))}
+          </div>
+          <div className="ticker-scroll" style={{marginLeft: '2rem'}}>
+            {brands.map((brand, index) => (
+              <span key={`duplicate-${index}`} className="brand-name">
                 {brand}
               </span>
             ))}

@@ -152,13 +152,14 @@
 
 .ticker-content {
   display: flex;
+  animation: scroll 10s linear infinite;
 }
 
 .ticker-scroll {
   display: flex;
   gap: 2rem;
   white-space: nowrap;
-  animation: scroll 120s linear infinite;
+  flex-shrink: 0;
 }
 
 .brand-name {
@@ -271,7 +272,7 @@
 /* Animations */
 @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  100% { transform: translateX(-50%); }
 }
 
 @keyframes pulse {
