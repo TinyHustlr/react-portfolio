@@ -60,7 +60,7 @@
 
 .hero-image-container {
   order: 2;
-  padding: 1rem 0;`
+  padding: 1rem 0;
 }
 
 .hero-image {
@@ -276,7 +276,7 @@
 /* Tablet Breakpoint - 768px and up */
 @media (min-width: 768px) {
   .hero-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 2rem;
     padding: 2rem;
     text-align: left;
@@ -290,6 +290,7 @@
   .hero-image-container {
     order: 2;
     padding: 0;
+    justify-self: right;
   }
   
   .hero-heading {
@@ -347,8 +348,21 @@
     max-width: 1200px;
   }
 
+    .hero-container {
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: left;
+    align-items: center;
+  }
+
   .hero-container {
+    grid-template-columns: 3fr 1fr;
     padding: 3rem 0;
+  }
+  
+  .hero-image-container {
+    justify-self: right;
   }
   
   .hero-heading {
@@ -371,7 +385,7 @@
   .cert-image {
     width: 150px;
   }
-  
+
   .section-title {
     font-size: 4rem;
   }
