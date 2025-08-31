@@ -5,9 +5,7 @@ function TrustedBy() {
 
   return (
     <>
-    <div className="description-text">
-      Trusted by:
-    </div>
+      <h3 className="ticker-heading">Trusted by:</h3>
       <div className="brand-ticker">
         <div className="ticker-content">
           <div className="ticker-scroll">

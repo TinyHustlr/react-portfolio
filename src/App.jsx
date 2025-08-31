@@ -13,9 +13,9 @@ function App() {
       <Hero />
       <BodyCopy />
       <CTAButtons />
-      <Certifications />
       <TrustedBy />
       <YouTube />
+      <Certifications />
     </main>
   )
 }
