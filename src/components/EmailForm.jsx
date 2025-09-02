@@ -28,7 +28,7 @@ export default function EmailForm() {
 
   return (
     <div>
-      <form onSubmit={onSubmit}>
+      <form id="contactForm" onSubmit={onSubmit}>
         <label for="name">Name</label><br></br>
         <input type="text" name="name" required/><br></br>
         <label for="email">Email</label><br></br>

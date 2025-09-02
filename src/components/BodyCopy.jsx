@@ -1,4 +1,4 @@
-function BodyCopy() {
+export default function BodyCopy() {
     return (
         <div className="description">
           <p className="description-text">
@@ -10,5 +10,3 @@ function BodyCopy() {
         </div>
     )
 };
-
-export default BodyCopy;

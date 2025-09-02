@@ -10,7 +10,7 @@ import hackathon from '../assets/microsoft-global-hackathon-2023.png'
 import AIRecord from '../assets/ai_guiness_ 1.png'
 
 
-function Certifications() {
+export default function Certifications() {
     return (
     <div className='certifications-container'>
         <div className='cert-image-section'>
@@ -30,5 +30,3 @@ function Certifications() {
     </div>
     )
 }
-
-export default Certifications

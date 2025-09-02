@@ -1,4 +1,4 @@
-function TrustedBy() {
+export default function Ticker() {
     const brands = [
     'MICROSOFT', 'CLIPCHAMP', 'MYDNA', 'LIFE-SPACE PROBIOTICS', 'JAYCAR', 'MANGROVE DIGITAL', 'MONASH UNIVERSITY'
   ];
@@ -27,5 +27,3 @@ function TrustedBy() {
       </>
       );
 }
-
-export default TrustedBy;

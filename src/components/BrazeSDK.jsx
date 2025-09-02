@@ -1,6 +1,6 @@
 /* global braze */
 
-// function BrazeSDK() {
+// export default function BrazeSDK() {
 //   // Initialize Braze SDK if braze is available
 //   if (typeof braze !== 'undefined') {
 //     braze.initialize('', {
@@ -21,5 +21,3 @@
 
 //   return null; // This component doesn't render anything
 // }
-
-// export default BrazeSDK;
