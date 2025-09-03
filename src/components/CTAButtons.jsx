@@ -10,6 +10,9 @@ export default function CTAButtons() {
           <a href="https://www.linkedin.com/in/davidworeilly/" target="_blank" rel="noreferrer noopener">
           <button className="btn-linkedin">LINKEDIN</button>
           </a>
+          <a href="https://www.twitch.tv/minimumviablepizza" target="_blank" rel="noreferrer noopener">
+          <button className="btn-twitch">TWITCH</button>
+          </a>
         </div>
         </>
     )

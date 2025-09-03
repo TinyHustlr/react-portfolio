@@ -4,9 +4,9 @@ export default function YouTube() {
       {/* YouTube Section */}
       <div className="youtube-section">
         <div className="youtube-container">
-          <h3 className="section-title">
+          <h2 className="section-title">
             YOUTUBE
-          </h3>
+          </h2>
           <p className="section-subtitle">
             Check out highlights from my channel
           </p>
