@@ -335,6 +335,7 @@
   .description,
   .description-text {
     padding: 0 2rem;
+    font-size: 1.2rem;
   }
   
   .hero-image {
@@ -346,7 +347,8 @@
     justify-content: center;
     padding: 3rem 2rem;
   }
-  
+
+
   .btn-contact, .btn-linkedin, .btn-youtube, .btn-twitch {
     width: auto;
     min-width: 200px;
@@ -405,6 +407,7 @@
   .description,
   .description-text {
     padding: 0 2rem;
+    font-size: 1.5rem;
   }
   
   .cta-buttons {

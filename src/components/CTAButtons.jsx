@@ -1,3 +1,5 @@
+import youtubeIcon from '../assets/youtube-icon.png'
+
 export default function CTAButtons() {
     return (
         <>
