@@ -18,6 +18,7 @@ export default function ContactForm() {
   }
 
 return (
+  <div>
   <form onSubmit={handleSubmit(onSubmit)}>
         <label for="name">Name</label><br></br>
         <input type="text" name="name" required/><br></br>
@@ -33,17 +34,7 @@ return (
          onVerify={onHCaptchaChange} 
       />
   </form>
-)}
-
-  return (
-    <div>
-      <form id="contactForm" onSubmit={onSubmit}>
-
-      </form>
       <span>{result}</span>
       <script src="https://web3forms.com/client/script.js" async defer></script>
-    </div>
-  );
-}
-
- formData.append("access_key", "61d38a4b-321e-41fc-b358-c5c93ed14fc7");
+      </div>
+)}
