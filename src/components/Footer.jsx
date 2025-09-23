@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer className="footer">
-            <p>Built with React and Vue cos I wanted to</p>
+            <p>Built with and Vite </p>
         </footer>
     )
 };
