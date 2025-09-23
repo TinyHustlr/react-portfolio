@@ -7,15 +7,13 @@ export default function Footer() {
         <footer className="footer">
             <p>Built with:</p>
             <span>
-                <a href="'https://react.dev/" target="_blank" rel="noreferrer noopener">
+                <a href="'https://www.react.dev/" target="_blank" rel="noreferrer noopener">
                     <img className="footer-logo" src={ reactLogo } />
                 </a>
-                <a href="'https://vite.dev/" target="_blank" rel="noreferrer noopener">
+                <a href="'https://www.vite.dev/" target="_blank" rel="noreferrer noopener">
                     <img className="footer-logo" src={ viteLogo } />
-                </a>
-                <a href="'https://vite.dev/" target="_blank" rel="noreferrer noopener">
+                <a/>
                     <img className="footer-logo" src={ pixelHeart } />
-                </a>
             </span>
         </footer>
     )
