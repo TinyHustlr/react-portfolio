@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 export default function EmailForm() {
-  const [result, setResult] = React.useState("");
+  const [result, setResult] = useState("");
     const onHCaptchaChange = (token) => {
     setValue("h-captcha-response", token);
   };
@@ -38,14 +39,14 @@ export default function EmailForm() {
         <input type="email" name="email" required/><br></br>
         <label for="message">Message</label><br></br>
         <textarea name="message" required></textarea><br></br>
-        <div class="h-captcha" data-captcha="true"></div>
-        <button type="submit">Submit Form</button>
-        <button type="submit">Submit Form</button>
+        <div className="h-captcha" data-captcha="true"></div>
+        
       <HCaptcha
          sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
          reCaptchaCompat={false}
          onVerify={onHCaptchaChange} 
       />
+      <button type="submit">Submit Form</button>
       </form>
       <span>{result}</span>
     <script src="https://web3forms.com/client/script.js" async defer></script>
