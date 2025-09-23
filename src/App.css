@@ -79,21 +79,20 @@
   align-items: center;
 }
 
-.btn-contact, .btn-linkedin, .btn-youtube, .btn-twitch {
-  width: 100%;
-  max-width: 300px;
+.btn-cta {
+  width: 200px;
   padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.2s ease;
+  border: none;
 }
 
 .btn-contact {
   background: linear-gradient(to right, #FF901F, #FF2975);
   color: white;
-  border: none;
 }
 
 .btn-contact:hover {
@@ -349,7 +348,7 @@
   }
 
 
-  .btn-contact, .btn-linkedin, .btn-youtube, .btn-twitch {
+  .btn-cta {
     width: auto;
     min-width: 200px;
   }
