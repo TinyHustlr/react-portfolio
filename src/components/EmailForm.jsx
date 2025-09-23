@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import HCaptcha from '@hcaptcha/react-hcaptcha';
 
-export default function ContactForm() {
+export default function EmailForm() {
   const { register, handleSubmit, setValue } = useForm();
   
   const onHCaptchaChange = (token) => {
