@@ -276,6 +276,23 @@
   color: #9ca3af;
 }
 
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, textarea {
+  border-radius: 20px;
+  height: 2rem;
+  padding: 10px
+}
+
+textarea {
+    height: 5rem;
+}
+
 /* Footer */
 .footer {
   background: linear-gradient(to right, #111827, black);

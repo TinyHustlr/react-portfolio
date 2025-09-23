@@ -34,13 +34,11 @@ export default function EmailForm() {
     <div>
       <form onSubmit={onSubmit}>
         <label for="name">Name</label><br></br>
-        <input type="text" name="name" required/><br></br>
+        <input type="text" name="name" placeholder="First name" required/><br></br>
         <label for="email">Email</label><br></br>
-        <input type="email" name="email" required/><br></br>
+        <input type="email" name="email" placeholder="Email address" required/><br></br>
         <label for="message">Message</label><br></br>
-        <textarea name="message" required></textarea><br></br>
-        <div className="h-captcha" data-captcha="true"></div>
-        
+        <textarea name="message" placeholder="Message" required></textarea><br></br>
       <HCaptcha
          sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
          reCaptchaCompat={false}
