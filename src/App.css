@@ -290,6 +290,12 @@
   font-family: monospace;
 }
 
+.footer-logo {
+  width: 20%;
+  max-width: 80px;
+  margin: 5px
+}
+
 /* Animations */
 @keyframes scroll {
   0% { transform: translateX(0); }
@@ -429,6 +435,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
   }
+  
 }
 
 /* Large Desktop Breakpoint - 1440px and up */

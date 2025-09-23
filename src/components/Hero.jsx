@@ -12,11 +12,7 @@ export default function Hero() {
       </div>
       <div className="hero-image-container">
         <img className="hero-image" src={profilepic} />
-      </div>
-        
-                {/* Description */}
-
-        
+      </div>        
     </div>
   );
 }
