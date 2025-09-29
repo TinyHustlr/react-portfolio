@@ -7,13 +7,11 @@ import YouTube from './components/YouTube'
 import BodyCopy from './components/BodyCopy'
 import Footer from './components/Footer'
 import EmailForm from './components/EmailForm'
-import BrazeSDK from './components/BrazeSDK'
 
 function App() {
 
   return (
     <main>
-      <BrazeSDK />
       <Hero />
       <BodyCopy />
       <CTAButtons />
