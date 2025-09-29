@@ -5,7 +5,7 @@ export default function BrazeSDK() {
   if (typeof braze !== 'undefined') {
     braze.initialize('9d6d4815-121a-4429-96c1-37f70e975f01', {
         baseUrl: 'sdk.fra-02.braze.eu',
-        enableLogging: false,
+        enableLogging: true,
         allowUserSuppliedJavascript: false,
     });
     console.log("Web SDK initialized");
