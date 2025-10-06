@@ -13,7 +13,6 @@ function App() {
 
   return (
     <main>
-      <BrazeSDK />
       <Hero />
       <BodyCopy />
       <CTAButtons />
