@@ -12,6 +12,7 @@ export default function BrazeSDK() {
 
     // optionally show all in-app messages without custom handling
     braze.automaticallyShowInAppMessages();
+    console.log("In app message to show")
 
 
     // Open Braze session after a short delay to ensure initialization is complete
