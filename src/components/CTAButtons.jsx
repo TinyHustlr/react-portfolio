@@ -16,6 +16,7 @@ export default function CTAButtons() {
           <button className="btn-cta" onClick={() => {
             if (window.braze) {
               braze.logCustomEvent("add_to_cart")
+              braze.requestImmediateDataFlush()
               console.log("Braze event logged")
             } else {
               console.error("Event not logged")
