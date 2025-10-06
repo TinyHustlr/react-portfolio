@@ -10,6 +10,10 @@ export default function BrazeSDK() {
     });
     console.log("Web SDK initialized");
 
+    // optionally show all in-app messages without custom handling
+    braze.automaticallyShowInAppMessages();
+
+
     // Open Braze session after a short delay to ensure initialization is complete
     setTimeout(() => {
         braze.changeUser("mvp-test");
