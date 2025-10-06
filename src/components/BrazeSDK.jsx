@@ -1,4 +1,4 @@
-// /* global braze */
+/* global braze */
 
 export default function BrazeSDK() {
   // Initialize Braze SDK if braze is available
