@@ -13,14 +13,14 @@ export default function CTAButtons() {
           <a href="https://www.twitch.tv/minimumviablepizza" target="_blank" rel="noreferrer noopener">
           <button className="btn-twitch btn-cta">TWITCH</button>
           </a>
-          <button className="btn-cta" onClick={() => {
+          {/* <button className="btn-cta" onClick={() => {
             if (window.braze) {
               braze.logCustomEvent("add_to_cart")
               console.log("Braze event logged")
             } else {
               console.error("Event not logged")
             }
-          }} >BRAZE</button>
+          }} >BRAZE</button> */}
         </div>
         </>
     )
