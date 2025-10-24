@@ -26,3 +26,94 @@
 
 //   return null;
 // }
+
+
+<!DOCTYPE html>
+<!-- This is a sample integration of the Braze Web SDK.
+     Visit https://js.appboycdn.com/web-sdk/latest/sample-build/index.html to see a deployed instance of this page
+-->
+<html>
+  <head>
+    <title>Braze Web SDK Sample Integration</title>
+    <script type="text/javascript">
+      +function(a,p,P,b,y){a.braze={};a.brazeQueue=[];for(var s="BrazeSdkMetadata DeviceProperties Card Card.prototype.dismissCard Card.prototype.removeAllSubscriptions Card.prototype.removeSubscription Card.prototype.subscribeToClickedEvent Card.prototype.subscribeToDismissedEvent Card.fromContentCardsJson ImageOnly CaptionedImage ClassicCard ControlCard ContentCards ContentCards.prototype.getUnviewedCardCount ControlMessage InAppMessage InAppMessage.SlideFrom InAppMessage.ClickAction InAppMessage.DismissType InAppMessage.OpenTarget InAppMessage.ImageStyle InAppMessage.Orientation InAppMessage.TextAlignment InAppMessage.CropType InAppMessage.prototype.closeMessage InAppMessage.prototype.removeAllSubscriptions InAppMessage.prototype.removeSubscription InAppMessage.prototype.subscribeToClickedEvent InAppMessage.prototype.subscribeToDismissedEvent InAppMessage.fromJson FullScreenMessage ModalMessage HtmlMessage SlideUpMessage User User.Genders User.NotificationSubscriptionTypes User.prototype.addAlias User.prototype.addToCustomAttributeArray User.prototype.addToSubscriptionGroup User.prototype.getUserId User.prototype.getUserId User.prototype.incrementCustomUserAttribute User.prototype.removeFromCustomAttributeArray User.prototype.removeFromSubscriptionGroup User.prototype.setCountry User.prototype.setCustomLocationAttribute User.prototype.setCustomUserAttribute User.prototype.setDateOfBirth User.prototype.setEmail User.prototype.setEmailNotificationSubscriptionType User.prototype.setFirstName User.prototype.setGender User.prototype.setHomeCity User.prototype.setLanguage User.prototype.setLastKnownLocation User.prototype.setLastName User.prototype.setPhoneNumber User.prototype.setPushNotificationSubscriptionType User.prototype.setLineId InAppMessageButton InAppMessageButton.prototype.removeAllSubscriptions InAppMessageButton.prototype.removeSubscription InAppMessageButton.prototype.subscribeToClickedEvent FeatureFlag FeatureFlag.prototype.getStringProperty FeatureFlag.prototype.getNumberProperty FeatureFlag.prototype.getBooleanProperty FeatureFlag.prototype.getImageProperty FeatureFlag.prototype.getJsonProperty FeatureFlag.prototype.getTimestampProperty Banner Banner.prototype.getStringProperty Banner.prototype.getNumberProperty Banner.prototype.getBooleanProperty Banner.prototype.getImageProperty Banner.prototype.getJsonProperty Banner.prototype.getTimestampProperty automaticallyShowInAppMessages hideContentCards showContentCards showInAppMessage deferInAppMessage toggleContentCards changeUser destroy getDeviceId getDeviceId initialize isPushBlocked isPushPermissionGranted isPushSupported logCardDismissal logContentCardImpressions logContentCardClick logCustomEvent logInAppMessageButtonClick logInAppMessageClick logInAppMessageHtmlClick logInAppMessageImpression logPurchase openSession requestPushPermission removeAllSubscriptions removeSubscription requestContentCardsRefresh refreshFeatureFlags requestImmediateDataFlush enableSDK isDisabled setLogger setSdkAuthenticationSignature addSdkMetadata disableSDK subscribeToContentCardsUpdates subscribeToInAppMessage subscribeToSdkAuthenticationFailures toggleLogging unregisterPush wipeData handleBrazeAction subscribeToFeatureFlagsUpdates getAllFeatureFlags logFeatureFlagImpression requestBannersRefresh insertBanner getAllBanners subscribeToBannersUpdates isInitialized".split(" "),i=0;i<s.length;i++){for(var m=s[i],k=a.braze,l=m.split("."),j=0;j<l.length-1;j++)k=k[l[j]];k[l[j]]=(new Function("return function "+m.replace(/\./g,"_")+"(){window.brazeQueue.push(arguments); return true}"))()}window.braze.getDeferredInAppMessage=function(){return new window.braze.InAppMessage};window.braze.getCachedContentCards=function(){return new window.braze.ContentCards};window.braze.getUser=function(){return new window.braze.User};window.braze.getFeatureFlag=function(){return new window.braze.FeatureFlag};window.braze.getBanner=function(){return new window.braze.Banner};window.braze.newBannerFromJson=function(){return new window.braze.Banner};(y=p.createElement(P)).type='text/javascript';
+        y.src='https://js.appboycdn.com/web-sdk/6.2/braze.min.js';
+        y.async=1;(b=p.getElementsByTagName(P)[0]).parentNode.insertBefore(y,b)
+      }(window,document,'script');
+
+      // See https://js.appboycdn.com/web-sdk/6.2/doc/modules/braze.html#initialize for initialization options
+      braze.initialize('e491231d-c4ae-466d-8f7f-ba8ad308f12a', {
+        enableLogging: true,
+        baseUrl: 'sdk.iad-01.braze.com',
+        // Warning: Using the serviceWorkerLocation option limits the scope of push notifications on your site. See
+        // https://js.appboycdn.com/web-sdk/6.2/doc/modules/braze.html#initialize for more details.
+        // If in doubt, omit this option and use the default location of /service-worker.js
+        serviceWorkerLocation: document.location.pathname.replace('index.html', 'service-worker.js'),
+        safariWebsitePushId: 'web.com.braze.sample-build'
+      });
+      braze.automaticallyShowInAppMessages();
+      braze.openSession();
+      braze.getUser().setCustomUserAttribute('visited sample-build', new Date());
+    </script>
+  </head>
+  <body>
+    This is a sample integration of the Braze Web SDK, with web push integrated.
+    <br/><br/>
+    <!-- This App Group has a triggered push campaign tied to the "send me push" custom event -->
+    <button onclick="braze.requestPushPermission(function() {braze.logCustomEvent('send me push');braze.requestImmediateDataFlush();});">Send Me A Sample Push</button>
+  </body>
+</html>
+
+import { useEffect } from "react";
+
+import {
+  initialize,
+  automaticallyShowInAppMessages,
+  openSession,
+  getUser
+} from "@braze/web-sdk";
+
+function App() {
+  useEffect(() => {
+    initialize("e491231d-c4ae-466d-8f7f-ba8ad308f12a", {
+      enableLogging: true,
+      baseUrl: "sdk.iad-01.braze.com",
+      // Warning: Using the serviceWorkerLocation option limits the scope of push notifications on your site. See
+      // https://js.appboycdn.com/web-sdk/6.2/doc/module-appboy.html#initialize for more details.
+      // If in doubt, omit this option and use the default location of /service-worker.js
+      serviceWorkerLocation: "/service-worker.js",
+      safariWebsitePushId: "web.com.braze.sample-build"
+    });
+    automaticallyShowInAppMessages();
+    openSession();
+    getUser()?.setCustomUserAttribute("visited sample-build", new Date());
+  }, []);
+
+  const handleRegisterPushClick = async () => {
+    // use webpackExports magic comment to dynamically import while still getting the benefits of tree-shaking
+    const {
+      requestPushPermission,
+      logCustomEvent,
+      requestImmediateDataFlush
+    } = await import(
+      /* webpackExports: ["requestPushPermission", "logCustomEvent", "requestImmediateDataFlush"] */
+      "@braze/web-sdk"
+    );
+    requestPushPermission(() => {
+      logCustomEvent("send me push");
+      requestImmediateDataFlush();
+    });
+  };
+
+  return (
+    <div>
+      This is a sample integration of the Braze Web SDK, with web push
+      integrated.
+      <br />
+      <br />
+      <button onClick={handleRegisterPushClick}>Send Me A Sample Push</button>
+    </div>
+  );
+}
+
+export default App;

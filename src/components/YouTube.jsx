@@ -10,7 +10,6 @@ export default function YouTube() {
           <p className="section-subtitle">
             Check out highlights from my channel
           </p>
-          
           <div className="video-grid">
             {/* YouTube Video Placeholders */}
             <div className="video-card">
@@ -20,11 +19,24 @@ export default function YouTube() {
                 </div>
               </div>
             </div>
-            
             <div className="video-card">
               <div className="video-placeholder">
                 <div className="video-content">
                   <iframe src="https://www.youtube.com/embed/n9cpXlBmo_c?si=Yt4tXOtMmrDfW-mk" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                </div>
+              </div>
+            </div>
+            <div className="video-card">
+              <div className="video-placeholder">
+                <div className="video-content">
+                  <iframe src="https://www.youtube.com/embed/PZz4E-Pzva0?si=Ys1TnT4DuKGwe0nL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <div className="video-card">
+              <div className="video-placeholder">
+                <div className="video-content">
+                  <iframe src="https://www.youtube.com/embed/U8rmvazWNMM?si=5D4XI9mihf9-21Q8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
