@@ -12,7 +12,10 @@ braze.initialize('9d6d4815-121a-4429-96c1-37f70e975f01', {
 });
 console.log("Initalize");
 
+braze.changeUser("MVP-test");
+console.log("User changed to MVP-Test");
 braze.openSession();
+console.log("Session opened... maybe");
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
