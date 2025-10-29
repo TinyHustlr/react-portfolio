@@ -10,9 +10,9 @@ braze.initialize('9d6d4815-121a-4429-96c1-37f70e975f01', {
     enableLogging: true,
     allowUserSuppliedJavascript: false,
 });
-console.log("Web SDK initialized");
+console.log("Initalize");
 
-window.braze = braze;
+braze.openSession();
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
