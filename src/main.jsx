@@ -5,12 +5,21 @@ import App from './App.jsx'
 import * as braze from '@braze/web-sdk'
 
 // Initialize Braze SDK
-    braze.initialize('import.meta.env.VITE_BRAZE_API_KEY', {
-        baseUrl: 'sdk.fra-02.braze.eu',
-        enableLogging: true,
-        allowUserSuppliedJavascript: false,
-    });
-    console.log("Web SDK initialized");
+braze.initialize('import.meta.env.VITE_BRAZE_API_KEY', {
+    baseUrl: 'sdk.fra-02.braze.eu',
+    enableLogging: true,
+    allowUserSuppliedJavascript: false,
+});
+console.log("Web SDK initialized");
+
+    // Open Braze session after a short delay to ensure initialization is complete
+setTimeout(() => {  
+    braze.changeUser("mvp-test");
+    console.log("User changed");
+    braze.openSession();
+    console.log("Session started");
+}, 1000);
+  
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
