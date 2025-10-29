@@ -12,6 +12,8 @@ braze.initialize('9d6d4815-121a-4429-96c1-37f70e975f01', {
 });
 console.log("Web SDK initialized");
 
+window.braze = braze;
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
