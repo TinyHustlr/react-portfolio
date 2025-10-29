@@ -1,9 +1,16 @@
+import { logCustomEvent } from "@braze/web-sdk";
+
 export default function CTAButtons() {
+  function contactClick() {
+    document.getElementById('contactForm').scrollIntoView({ behavior: 'smooth'})
+    braze.logCustomEvent("contact_button")
+  };
+
     return (
         <>
       {/* CTA Buttons */}
         <div className="cta-buttons">
-          <button className="btn-contact btn-cta" onClick={() => document.getElementById('contactForm').scrollIntoView({ behavior: 'smooth'})}>GET IN TOUCH</button>
+          <button className="btn-contact btn-cta" onClick={contactClick}>GET IN TOUCH</button>
           <a href="https://www.youtube.com/@minimumviablepizza" target="_blank" rel="noreferrer noopener">
           <button className="btn-youtube btn-cta">YOUTUBE</button>
           </a>
@@ -13,16 +20,6 @@ export default function CTAButtons() {
           <a href="https://www.twitch.tv/minimumviablepizza" target="_blank" rel="noreferrer noopener">
           <button className="btn-twitch btn-cta">TWITCH</button>
           </a>
-          {/* <button className="btn-cta" onClick={() => {
-            if (window.braze) {
-              braze.logCustomEvent("add_to_cart")
-              braze.requestImmediateDataFlush()
-              console.log("Braze event logged")
-            } else {
-              console.error("Event not logged")
-            }
-            
-          }} >BRAZE</button> */}
         </div>
         </>
     )
