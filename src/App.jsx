@@ -7,7 +7,11 @@ import YouTube from './components/YouTube'
 import BodyCopy from './components/BodyCopy'
 import Footer from './components/Footer'
 import EmailForm from './components/EmailForm'
+import * as braze from '@braze/web-sdk'
+import { useEffect } from 'react'
 
+
+braze.automaticallyShowInAppMessages();
 
 function App() {
 
