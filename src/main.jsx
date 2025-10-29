@@ -5,8 +5,8 @@ import App from './App.jsx'
 import * as braze from '@braze/web-sdk'
 
 // Initialize Braze SDK
-braze.initialize('import.meta.env.VITE_BRAZE_API_KEY', {
-    baseUrl: 'sdk.fra-02.braze.eu',
+braze.initialize(import.meta.env.VITE_BRAZE_API_KEY, {
+    baseUrl: 'https://sdk.fra-02.braze.eu',
     enableLogging: true,
     allowUserSuppliedJavascript: false,
 });
