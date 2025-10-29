@@ -16,8 +16,8 @@ window.braze = braze;
 console.log("Window now global")
 
 setTimeout(() => {
-    braze.changeUser("MVP-test");
-    console.log("User changed to MVP-Test");
+    braze.changeUser("mvp-test");
+    console.log("User changed to mvp-test");
     braze.openSession();
     console.log("Session opened");
 }, 1000); 
