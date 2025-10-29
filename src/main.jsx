@@ -14,7 +14,9 @@ console.log("Web SDK initialized");
 
 // Open Braze session after a short delay to ensure initialization is complete
     braze.changeUser("mvp-test");
+    console.log("User changed")
     braze.openSession();
+    console.log("Session open")
   
 createRoot(document.getElementById('root')).render(
   <StrictMode>
