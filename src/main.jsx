@@ -12,6 +12,9 @@ braze.initialize('9d6d4815-121a-4429-96c1-37f70e975f01', {
 });
 console.log("Initalize");
 
+braze.automaticallyShowInAppMessages();
+console.log("In app messages called")
+
 window.braze = braze;
 console.log("Window now global")
 
