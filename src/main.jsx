@@ -12,20 +12,17 @@ braze.initialize('9d6d4815-121a-4429-96c1-37f70e975f01', {
 });
 console.log("Initalize");
 
-braze.automaticallyShowInAppMessages();
-console.log("In app messages called")
+setTimeout(() => {
+  braze.changeUser("mvp-test");
+  console.log("User changed to mvp-test");
+  braze.openSession();
+  console.log("Session opened");
+  braze.automaticallyShowInAppMessages();
+  console.log("In app messages called")
+}, 1000); 
 
 window.braze = braze;
 console.log("Window now global")
-
-setTimeout(() => {
-    braze.automaticallyShowInAppMessages();
-    console.log("In app messages called")
-    braze.changeUser("mvp-test");
-    console.log("User changed to mvp-test");
-    braze.openSession();
-    console.log("Session opened");
-}, 1000); 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
