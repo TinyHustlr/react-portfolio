@@ -11,12 +11,7 @@ export default function ContentCards() {
 
     // Subscribe to updates
     const subscription = braze.subscribeToContentCardsUpdates(() => {
-      // Only call if display is available
-      if (braze.display) {
-        braze.display.showContentCards("feed");
-      } else {
-        console.warn("Braze display not ready yet");
-      }
+        braze.showContentCards("feed");
     });
 
     // Request cards from Braze
