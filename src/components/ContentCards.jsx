@@ -1,3 +1,3 @@
 export default function ContentCards() {
-    return <div id="feed"></div>
+    return <div className="card-feed" id="feed"></div>
 }

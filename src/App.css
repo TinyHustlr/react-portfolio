@@ -293,6 +293,11 @@ textarea {
     height: 5rem;
 }
 
+/* Feed */
+.card-feed {
+  background-color: #F222FF;
+}
+
 /* Footer */
 .footer {
   background: linear-gradient(to right, #111827, black);
