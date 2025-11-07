@@ -7,6 +7,7 @@ import YouTube from './components/YouTube'
 import BodyCopy from './components/BodyCopy'
 import Footer from './components/Footer'
 import EmailForm from './components/EmailForm'
+import ContentCards from './components/ContentCards'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <YouTube />
       <Certifications />
       <EmailForm />
+      <ContentCards />
       <Footer />
     </main>
   )
