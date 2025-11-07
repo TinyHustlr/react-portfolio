@@ -20,8 +20,11 @@ function BrazeInitializer() {
     braze.changeUser("mvp-test");
     console.log("User changed to mvp-test");
 
-    braze.automaticallyShowInAppMessages();
-    console.log("In-app messages enabled");
+    setTimeout(() => {
+      braze.automaticallyShowInAppMessages();
+      console.log("In-app messages enabled (delayed)");
+    }, 1000);
+
 
     window.braze = braze;
   }, []);
