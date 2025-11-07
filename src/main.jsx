@@ -1,33 +1,39 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import * as braze from '@braze/web-sdk'
+import { StrictMode, useEffect } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
+import * as braze from "@braze/web-sdk";
 
-// Initialize Braze SDK
-braze.initialize('9d6d4815-121a-4429-96c1-37f70e975f01', {
-    baseUrl: 'https://sdk.fra-02.braze.eu',
-    enableLogging: true,
-    allowUserSuppliedJavascript: true,
-});
-console.log("Initalize");
+function BrazeInitializer() {
+  useEffect(() => {
+    console.log("Initializing Braze...");
 
-setTimeout(() => {
-  braze.changeUser("mvp-test");
-  console.log("User changed to mvp-test");
-  braze.openSession();
-  console.log("Session opened");
-  braze.automaticallyShowInAppMessages();
-  console.log("In app messages called")
-}, 1000); 
+    braze.initialize("9d6d4815-121a-4429-96c1-37f70e975f01", {
+      baseUrl: "https://sdk.fra-02.braze.eu",
+      enableLogging: true,
+      allowUserSuppliedJavascript: true,
+    });
 
-window.braze = braze;
-console.log("Window now global")
+    braze.openSession();
+    console.log("Session opened");
 
-createRoot(document.getElementById('root')).render(
+    braze.changeUser("mvp-test");
+    console.log("User changed to mvp-test");
+
+    braze.automaticallyShowInAppMessages();
+    console.log("In-app messages enabled");
+
+    window.braze = braze;
+  }, []);
+
+  return null;
+}
+
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
-
-
+    <>
+      <BrazeInitializer />
+      <App />
+    </>
+  </StrictMode>
+);
