@@ -20,7 +20,6 @@ function App() {
       <YouTube />
       <Certifications />
       <EmailForm />
-      <ContentCards />
       <Footer />
     </main>
   )
