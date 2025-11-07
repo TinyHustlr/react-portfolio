@@ -3,19 +3,28 @@ import * as braze from "@braze/web-sdk";
 
 export default function ContentCards() {
   useEffect(() => {
-    // Subscribe to updates (optional but good practice)
+    // Wait until Braze has finished initializing and opened a session
+    if (!braze.isInitialized()) {
+      console.warn("Braze not initialized yet — waiting...");
+      return;
+    }
+
+    // Subscribe to updates
     const subscription = braze.subscribeToContentCardsUpdates(() => {
-      // When cards update, display the default feed
-      braze.display.showContentCards();
+      // Only call if display is available
+      if (braze.display) {
+        braze.display.showContentCards("feed");
+      } else {
+        console.warn("Braze display not ready yet");
+      }
     });
 
-    // Trigger refresh
+    // Request cards from Braze
     braze.requestContentCardsRefresh();
 
+    // Cleanup on unmount
     return () => subscription.remove();
   }, []);
 
-  // The Braze SDK will inject its own default UI here
-  console.log("Cards loaded successfully")
   return <div id="feed"></div>;
 }
