@@ -1,6 +1,6 @@
 import './App.css';
 import Home from './pages/Home';
-import Braze from './pages/Braze'
+import Braze from './pages/Braze';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {

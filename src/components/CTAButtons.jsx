@@ -1,9 +1,6 @@
-import { logCustomEvent } from "@braze/web-sdk";
-
 export default function CTAButtons() {
   function contactClick() {
     document.getElementById('contactForm').scrollIntoView({ behavior: 'smooth'})
-    braze.logCustomEvent("contact_button")
   };
 
     return (
