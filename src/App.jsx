@@ -1,27 +1,15 @@
-import './App.css'
-import Certifications from './components/Certifications'
-import Hero from './components/Hero'
-import CTAButtons from './components/CTAButtons'
-import Ticker from './components/Ticker'
-import YouTube from './components/YouTube'
-import BodyCopy from './components/BodyCopy'
-import Footer from './components/Footer'
-import EmailForm from './components/EmailForm'
+import './App.css';
+import Home from './pages/Home';
+import { Routes } from 'react-router-dom';
 
 function App() {
 
   return (
-    <main>
-      <Hero />
-      <BodyCopy />
-      <CTAButtons />
-      <Ticker />
-      <YouTube />
-      <Certifications />
-      <EmailForm />
-      <Footer />
-    </main>
-  )
+    <Routes>
+      <Route path="/" element={<Home / >} />
+      <Route path="/" element={<Braze / >} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
