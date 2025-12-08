@@ -1,12 +1,14 @@
 import './App.css';
 import Home from './pages/Home';
-import { Routes } from 'react-router-dom';
+import Braze from '.pages/Braze'
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Home / >} />
+      <Route path="/" element={<Home />} />
+      <Route path="/Braze" element={<Braze />} />
     </Routes>
   );
 }

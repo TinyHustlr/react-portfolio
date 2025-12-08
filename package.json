@@ -13,8 +13,8 @@
   "dependencies": {
     "@braze/web-sdk": "^6.3.0",
     "@hcaptcha/react-hcaptcha": "^1.12.1",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1",
     "react-router-dom": "^7.10.1"
   },
   "devDependencies": {
