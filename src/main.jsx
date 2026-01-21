@@ -11,7 +11,7 @@ function BrazeInitializer() {
 
     braze.initialize("9d6d4815-121a-4429-96c1-37f70e975f01", {
       baseUrl: "https://sdk.fra-02.braze.eu",
-      enableLogging: true,
+      enableLogging: false,
       allowUserSuppliedJavascript: true,
     });
 
