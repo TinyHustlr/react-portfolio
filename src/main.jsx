@@ -25,10 +25,13 @@ function BrazeInitializer() {
     setTimeout(() => {
       braze.automaticallyShowInAppMessages();
       console.log("In-app messages enabled");
-      braze.requestPushPermission();
-      console.log("Requesting push permission");
     }, 1000);
 
+
+    setTimeout(() => {
+      braze.requestPushPermission();
+      console.log("Requesting push permission");
+    }, 5000);
 
 
 
