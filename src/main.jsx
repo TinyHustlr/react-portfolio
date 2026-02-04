@@ -29,7 +29,7 @@ function BrazeInitializer() {
 
     setTimeout(() => {
       braze.requestPushPermission();
-      console.log("Requesting push permission");
+      console.log("Requesting push permission v2");
     }, 5000);
 
 
