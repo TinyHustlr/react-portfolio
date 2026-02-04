@@ -13,6 +13,7 @@ function BrazeInitializer() {
       baseUrl: "https://sdk.fra-02.braze.eu",
       enableLogging: false,
       allowUserSuppliedJavascript: true,
+      manageServiceWorkerExternally,
     });
 
     braze.openSession();
@@ -23,8 +24,10 @@ function BrazeInitializer() {
 
     setTimeout(() => {
       braze.automaticallyShowInAppMessages();
-      console.log("In-app messages enabled (delayed)");
+      console.log("In-app messages enabled");
     }, 1000);
+
+
 
 
     window.braze = braze;
