@@ -9,7 +9,7 @@ import torchieAward from '../assets/braze-torchie-award.png'
 import hackWinner from '../assets/microsoft-global-hackathon-2024-executive-challenge.png'
 import hackathon from '../assets/microsoft-global-hackathon-2023.png'
 import AIRecord from '../assets/ai_guiness_ 1.png'
-import partnerGold from '../assets/partnerGold.png'
+import partnerGold from '../assets/braze-gold-partner.png'
 
 
 export default function Certifications() {
