@@ -13,7 +13,7 @@ function BrazeInitializer() {
       baseUrl: "https://sdk.fra-02.braze.eu",
       enableLogging: false,
       allowUserSuppliedJavascript: true,
-      manageServiceWorkerExternally,
+      manageServiceWorkerExternally: true,
     });
 
     braze.openSession();
