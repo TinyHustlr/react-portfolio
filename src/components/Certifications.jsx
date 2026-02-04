@@ -9,6 +9,7 @@ import torchieAward from '../assets/braze-torchie-award.png'
 import hackWinner from '../assets/microsoft-global-hackathon-2024-executive-challenge.png'
 import hackathon from '../assets/microsoft-global-hackathon-2023.png'
 import AIRecord from '../assets/ai_guiness_ 1.png'
+import partnerGold from '../assets/partnerGold.png'
 
 
 export default function Certifications() {
@@ -24,6 +25,7 @@ export default function Certifications() {
         <img className='cert-image' src={brazeEmail} />
         </div>
         <div className='cert-image-section'>
+        <img className='cert-image' src={partnerGold} />
         <img className='cert-image round-corners' src={torchieAward} />
         <img className='cert-image round-corners' src={hackWinner} />
         <img className='cert-image round-corners' src={hackathon} />
