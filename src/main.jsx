@@ -9,7 +9,7 @@ function BrazeInitializer() {
   useEffect(() => {
     console.log("Initializing Braze...");
 
-    braze.initialize("9d6d4815-121a-4429-96c1-37f70e975f01", {
+    braze.initialize("75afc0ca-d5da-4a7a-8f55-c5226d116349", {
       baseUrl: "https://sdk.fra-02.braze.eu",
       enableLogging: false,
       allowUserSuppliedJavascript: true,
