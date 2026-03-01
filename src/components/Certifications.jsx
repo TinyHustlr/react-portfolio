@@ -4,6 +4,7 @@ import brazePrac from '../assets/braze-certified-practitioner.png'
 import brazeAIcert from '../assets/braze-certified-ai-fundamentals.png'
 import brazeAI from '../assets/braze-certification-brazeai-skills-badge.png'
 import brazeSDK from '../assets/braze-web-sdk-skills-badge.png'
+import brazeiOS from '..assets/ios-sdk-skills-badge.png'
 import brazeEmail from '../assets/braze-certification-email-deliverability-skills-bad.png'
 import torchieAward from '../assets/braze-torchie-award.png'
 import hackWinner from '../assets/microsoft-global-hackathon-2024-executive-challenge.png'
@@ -22,6 +23,7 @@ export default function Certifications() {
         <img className='cert-image' src={brazeAIcert} />
         <img className='cert-image' src={brazeAI} />
         <img className='cert-image' src={brazeSDK} />
+        <img className='cert-image' src={brazeiOS} />
         <img className='cert-image' src={brazeEmail} />
         </div>
         <div className='cert-image-section'>
