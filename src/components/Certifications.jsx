@@ -24,9 +24,9 @@ export default function Certifications() {
         <img className='cert-image' src={brazeAI} />
         <img className='cert-image' src={brazeSDK} />
         <img className='cert-image' src={brazeiOS} />
-        <img className='cert-image' src={brazeEmail} />
         </div>
         <div className='cert-image-section'>
+        <img className='cert-image' src={brazeEmail} />
         <img className='cert-image' src={partnerGold} />
         <img className='cert-image round-corners' src={torchieAward} />
         <img className='cert-image round-corners' src={hackWinner} />
