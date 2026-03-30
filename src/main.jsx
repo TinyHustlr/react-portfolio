@@ -43,11 +43,10 @@ function BrazeInitializer() {
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <>
+    <BrazeInitializer />
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </>
   </StrictMode>
 );
-
-BrazeInitializer();
