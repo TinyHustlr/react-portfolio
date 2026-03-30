@@ -40,6 +40,8 @@ function BrazeInitializer() {
   return null;
 }
 
+BrazeInitializer()
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <>
