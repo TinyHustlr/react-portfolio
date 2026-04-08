@@ -5,7 +5,7 @@ function Braze({ masthead }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const url = `https://www.brazelandingpage.com?email=${encodeURIComponent(email)}&masthead=${encodeURIComponent(masthead)}`;
+    const url = `https://fb6491b6-cada-4140-bbc2-70232ca4b9d5.eu02.ldpgs.eu/u5u5g?email=${encodeURIComponent(email)}&masthead=${encodeURIComponent(masthead)}`;
     window.location.href = url;
   };
 
