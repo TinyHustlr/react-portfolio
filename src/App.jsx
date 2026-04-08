@@ -8,7 +8,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/Braze" element={<Braze />} />
+      <Route path="/Braze" element={<Braze element={<Braze masthead="canberra_times" />}/>} />
     </Routes>
   );
 }
