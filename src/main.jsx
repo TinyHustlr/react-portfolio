@@ -9,9 +9,12 @@ function BrazeInitializer() {
   useEffect(() => {
     console.log("Initializing Braze...");
 
-    braze.initialize("f1cc2684-5ef1-46ed-b0d9-f4a047f3a6b1", {
-      baseUrl: "https://sdk.fra-02.braze.eu",
-      enableLogging: false,
+// f1cc2684-5ef1-46ed-b0d9-f4a047f3a6b1
+// https://sdk.fra-02.braze.eu
+
+    braze.initialize("552835c6-3d6b-4db5-99cd-5798d8ea678f", {
+      baseUrl: "sdk.iad-07.braze.com",
+      enableLogging: true,
       allowUserSuppliedJavascript: true,
     });
 
@@ -26,13 +29,15 @@ function BrazeInitializer() {
       console.log("In-app messages enabled");
     }, 1000);
 
-
     setTimeout(() => {
       braze.requestPushPermission();
       console.log("Requesting push permission v2");
     }, 5000);
 
+    const container = document.getElementById("braze-content-cards");
+    braze.showContentCards(container);
 
+braze.openSession();
 
     window.braze = braze;
   }, []);
