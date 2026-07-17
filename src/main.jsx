@@ -21,8 +21,8 @@ function BrazeInitializer() {
     braze.openSession();
     console.log("Session opened");
 
-    braze.changeUser("mvp-test");
-    console.log("User changed to mvp-test");
+    braze.changeUser("mangrove-test-DO");
+    console.log("User changed to mangrove-test-DO");
 
     setTimeout(() => {
       braze.automaticallyShowInAppMessages();
