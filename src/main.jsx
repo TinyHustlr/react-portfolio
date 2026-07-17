@@ -9,20 +9,17 @@ function BrazeInitializer() {
   useEffect(() => {
     console.log("Initializing Braze...");
 
-// f1cc2684-5ef1-46ed-b0d9-f4a047f3a6b1
-// https://sdk.fra-02.braze.eu
-
-    braze.initialize("552835c6-3d6b-4db5-99cd-5798d8ea678f", {
-      baseUrl: "sdk.iad-07.braze.com",
-      enableLogging: true,
+    braze.initialize("f1cc2684-5ef1-46ed-b0d9-f4a047f3a6b1", {
+      baseUrl: "https://sdk.fra-02.braze.eu",
+      enableLogging: false,
       allowUserSuppliedJavascript: true,
     });
 
     braze.openSession();
     console.log("Session opened");
 
-    braze.changeUser("mangrove-test-DO");
-    console.log("User changed to mangrove-test-DO");
+    braze.changeUser("mvp-test");
+    console.log("User changed to mvp-test");
 
     setTimeout(() => {
       braze.automaticallyShowInAppMessages();
@@ -34,8 +31,8 @@ function BrazeInitializer() {
       console.log("Requesting push permission v2");
     }, 5000);
 
-    const container = document.getElementById("braze-content-cards");
-    braze.showContentCards(container);
+    // const container = document.getElementById("braze-content-cards");
+    // braze.showContentCards(container);
 
 braze.openSession();
 
