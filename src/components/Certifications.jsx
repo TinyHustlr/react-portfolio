@@ -1,3 +1,4 @@
+import brazeOnboardingTA from '../assets/braze-validated-onboarding-technical-architect.png'
 import brazeArchitect from '../assets/braze-certified-technical-architect.png'
 import brazeDeveloper from '../assets/braze-certified-developer.png'
 import brazePrac from '../assets/braze-certified-practitioner.png'
@@ -17,6 +18,7 @@ export default function Certifications() {
     return (
     <div className='certifications-container'>
         <div className='cert-image-section'>
+        <img className='cert-image' src={brazeOnboardingTA} />
         <img className='cert-image' src={brazeArchitect} />
         <img className='cert-image' src={brazeDeveloper} />
         <img className='cert-image' src={brazePrac} />
