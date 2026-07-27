@@ -21,13 +21,13 @@ export default function Certifications() {
         <img className='cert-image' src={brazeOnboardingTA} />
         <img className='cert-image' src={brazeArchitect} />
         <img className='cert-image' src={brazeDeveloper} />
-        <img className='cert-image' src={brazePrac} />
-        <img className='cert-image' src={brazeAIcert} />
         <img className='cert-image' src={brazeAI} />
         <img className='cert-image' src={brazeSDK} />
         <img className='cert-image' src={brazeiOS} />
         </div>
         <div className='cert-image-section'>
+        <img className='cert-image' src={brazePrac} />
+        <img className='cert-image' src={brazeAIcert} />
         <img className='cert-image' src={brazeEmail} />
         <img className='cert-image' src={partnerGold} />
         <img className='cert-image round-corners' src={torchieAward} />
