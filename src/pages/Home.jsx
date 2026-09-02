@@ -6,7 +6,6 @@ import YouTube from '../components/YouTube';
 import BodyCopy from '../components/BodyCopy';
 import Footer from '../components/Footer';
 import EmailForm from '../components/EmailForm';
-import Iframe from '../components/Iframe';
 
 function Home() {
 
@@ -16,7 +15,6 @@ function Home() {
       <BodyCopy />
       <CTAButtons />
       <Ticker />
-      <Iframe />
       <YouTube />
       <Certifications />
       <EmailForm />
